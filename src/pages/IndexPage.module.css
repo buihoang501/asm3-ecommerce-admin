@@ -1,0 +1,15 @@
+/* Index Styling */
+
+.index {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.index > header {
+  background-color: #101a33;
+  height: 60px;
+  border-bottom: 1px solid#101a33;
+}
+
+.index main {
+  display: flex;
+}

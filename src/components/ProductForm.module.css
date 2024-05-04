@@ -1,0 +1,52 @@
+/* Product form styling */
+.product-form {
+  background-color: #f9fbfd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.product-form form {
+  padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+}
+.product-form .form-control {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-form .form-control > label {
+  color: #5d656f;
+}
+.product-form .form-control > input[type="text"],
+.product-form .form-control > textarea,
+.product-form .form-control > input[type="number"] {
+  padding: 0.5rem 0.75rem;
+  outline: none;
+  border: 1px solid #ccc;
+  font-weight: 500;
+  border-radius: 0.125rem;
+  color: #5d656f;
+  font-size: 1rem;
+}
+.product-form .form-control > input[type="file"],
+.product-form .form-control > input[type="number"] {
+  color: #5d656f;
+  font-size: 1rem;
+}
+
+.product-form .form-control > input[type="text"]::placeholder,
+.product-form .form-control > textarea::placeholder,
+.product-form .form-control > input[type="number"]::placeholder {
+  color: #b8c3d5;
+}
+
+.product-form form > button {
+  background-color: #5f76e8;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+}

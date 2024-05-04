@@ -1,0 +1,150 @@
+/* Products */
+.index {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  flex-direction: column;
+}
+
+.index > .head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.index > .head > button {
+  position: relative;
+  top: 20px;
+  outline: 0;
+  border: 0;
+  padding: 0.75rem 0.5rem;
+  color: #fff;
+  background-color: #22ca80;
+  cursor: pointer;
+}
+
+.index > .head > h3 {
+  color: #444;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.index > input {
+  margin-bottom: 1rem;
+  color: #444;
+  width: 30%;
+  outline: none;
+  min-width: 300px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+.products > input::placeholder {
+  color: #b4b6b8;
+}
+
+.products .icon {
+  font-size: 0.9rem;
+}
+.products th {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #868788;
+}
+
+.products table {
+  width: 100%;
+
+  border-radius: 1em;
+}
+.products table,
+td,
+th {
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+.products tr.gray {
+  background-color: #f4f8fb;
+}
+
+.products th,
+.products td {
+  text-align: left;
+  height: 50px;
+
+  padding: 0.5rem 1rem 0.5rem 0.75rem;
+}
+.products td {
+  color: #abaeb4;
+
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.products td > img {
+  width: 70px;
+}
+.products .action > button {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #ff4f70;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: #fff;
+  background-color: #ff4f70;
+}
+
+.products .action {
+  display: flex;
+}
+.products .action > .update {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #22ca80;
+  background-color: #22ca80;
+  color: #fff;
+}
+
+/* Responsive */
+@media screen and (max-width: 1248px) {
+  .index {
+    padding-right: 1rem;
+  }
+  .info {
+    margin-left: 200px;
+    padding: 1.2rem 0 0 1.2rem;
+    width: calc(100% - 200px);
+  }
+  .info > div {
+    margin-right: 1rem;
+  }
+  .products {
+    padding: 1.5rem 0 0 0;
+  }
+  .products th,
+  .products td {
+    padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .info {
+    margin-left: 0;
+
+    width: 100%;
+  }
+}
+@media screen and (max-width: 732px) {
+  .info {
+    margin-left: 0;
+
+    width: 100%;
+  }
+  .info > div {
+    margin-left: 0;
+  }
+  .products th .products td {
+    padding: 0.25rem;
+    font-size: 0.75rem;
+  }
+}
